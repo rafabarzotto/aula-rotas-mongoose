@@ -8,22 +8,22 @@ var db = mongoose.connection;
 
 // When successfully connected
 db.on('connected', function () {
-  console.log('Mongoose default connection open to ');
+  console.log('Mongoose Conectado! ');
 });
 
 // If the connection throws an error
 db.on('error',function (err) {
-  console.log('Mongoose default connection error: ' + err);
+  console.log('Mongoose ERRO: ' + err);
 });
 
 // When the connection is disconnected
 db.on('disconnected', function () {
-  console.log('Mongoose default connection disconnected');
+  console.log('Mongoose disconectado!');
 });
 
 // When the connection is disconnected
 db.on('open', function () {
-  console.log('Mongoose default connection is open');
+  console.log('Mongoose conexão aberta!');
 });
 
 var Schema = mongoose.Schema;
